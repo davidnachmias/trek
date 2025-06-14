@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  font-family: Inter;
+}
+
+.blackBg {
+  @apply absolute top-0 z-[-2] h-screen w-screen bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900;
+}
