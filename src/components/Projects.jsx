@@ -1,18 +1,34 @@
 import React from "react";
 import { PROJECTS } from "../constants/constants";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   return (
-    <div className="border-b border-neutral-900 pb-4">
-      <h2 className="my-20 text-center text-4xl">Projects and Experiments</h2>
+    <div className="border-b border-neutral-400 pb-4">
+      <motion.h2
+        initial={{ y: -100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: false }}
+        transition={{ duration: 1 }}
+        className="my-20 text-center text-4xl"
+      >
+        Projects and Experiments
+      </motion.h2>
       {PROJECTS.map((project, index) => (
-        <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-          <div className="w-full lg:w-1/4 mr-20 ">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 1 }}
+          key={index}
+          className="mb-8 flex flex-wrap lg:justify-center mx-20 "
+        >
+          <div className="w-full lg:w-1/4  ">
             {project.image ? (
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <img
                   src={project.image}
-                  className="w-full cursor-pointer"
+                  className="w-full cursor-pointer "
                   alt={project.title}
                 />
               </a>
@@ -22,7 +38,7 @@ export default function Projects() {
               </div>
             )}
           </div>
-          <div className="w-full max-w-xl lg:w-3/4">
+          <div className="w-full max-w-xl lg:w-3/4 mx-20">
             <h6 className="mb-2 font-semibold">{project.title}</h6>
             {project.technologies && (
               <p className="text-sm">
@@ -35,17 +51,13 @@ export default function Projects() {
               </p>
             )}
             {project.url && (
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-pink-300 underline"
-              >
+              <a href={project.url} className="text-pink-300 underline">
                 {project.url}
               </a>
             )}
+            <p className="mb-4 ">{project.description}</p>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );

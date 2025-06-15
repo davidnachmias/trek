@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-600 selection:text-cyan-900">
       {/* רקע קבוע עם גרדיאנט סגול עדין */}
-      <div className="fixed top-0 left-0 -z-10 h-full w-full">
+      <div className="fixed top-0 left-0 -z-10 h-full w-full scroll-smooth">
         <div className="absolute top-0 z-[-2] h-screen w-screen blackBg" />
       </div>
 
