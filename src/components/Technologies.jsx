@@ -45,15 +45,17 @@ export default function TechnologiesReordering() {
   }, [order]);
 
   return (
-    <div className="border-b border-neutral-400 pb-4">
-      <div className="my-20 flex flex-col items-center justify-center w-full px-4 sm:px-6 lg:px-8">
-        <ul style={container}>
-          {order.map((tech) => (
-            <motion.li key={tech.id} layout transition={spring} style={item}>
-              {tech.icon}
-            </motion.li>
-          ))}
-        </ul>
+    <div className="relative overflow-hidden" style={{ maxHeight: "100vh" }}>
+      <div className="border-b border-neutral-400 pb-4">
+        <div className="my-20 flex flex-col items-center justify-center w-full px-4 sm:px-6 lg:px-8">
+          <ul style={container}>
+            {order.map((tech) => (
+              <motion.li key={tech.id} layout transition={spring} style={item}>
+                {tech.icon}
+              </motion.li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
