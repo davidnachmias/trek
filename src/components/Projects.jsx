@@ -21,14 +21,14 @@ export default function Projects() {
           viewport={{ once: false }}
           transition={{ duration: 1 }}
           key={index}
-          className="mb-8 flex flex-wrap lg:justify-center mx-20 "
+          className="mb-8 flex flex-wrap lg:justify-center mx-4 lg:mx-20"
         >
-          <div className="w-full lg:w-1/4  ">
+          <div className="w-full lg:w-1/4">
             {project.image ? (
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <img
                   src={project.image}
-                  className="w-full cursor-pointer "
+                  className="w-full cursor-pointer mb-4"
                   alt={project.title}
                 />
               </a>
@@ -38,10 +38,10 @@ export default function Projects() {
               </div>
             )}
           </div>
-          <div className="w-full max-w-xl lg:w-3/4 mx-20">
+          <div className="w-full max-w-xl lg:w-3/4 px-6 sm:px-8 lg:px-0 lg:ml-8">
             <h6 className="mb-2 font-semibold">{project.title}</h6>
             {project.technologies && (
-              <p className="text-sm">
+              <p className="text-sm flex flex-wrap">
                 <span className="mr-2 font-semibold">Technologies:</span>
                 {project.technologies.map((tech, techIndex) => (
                   <span key={techIndex} className="mr-2 text-pink-300">
@@ -55,7 +55,7 @@ export default function Projects() {
                 {project.url}
               </a>
             )}
-            <p className="mb-4 ">{project.description}</p>
+            <p className="mb-4">{project.description}</p>
           </div>
         </motion.div>
       ))}
