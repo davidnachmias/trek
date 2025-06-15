@@ -1,4 +1,3 @@
-import React from "react";
 import logo2 from "../assets/img/logo2.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -11,9 +10,13 @@ export default function Navbar() {
         <img className="h-20 w-20" src={logo2} alt="logo" />
       </div>
       <div className="flex items-center gap-4">
-        <FaLinkedin className="text-white w-10 h-10" />
-        <FaGithub className="text-white w-10 h-10" />
-        <FaInstagram className="text-white w-10 h-10" />
+        <a href="https://www.linkedin.com/in/david-nachmias" target="_blank">
+          <FaLinkedin className="text-white w-10 h-10" />
+        </a>
+
+        <a href="https://github.com/DavidNachmias" target="_blank">
+          <FaGithub className="text-white w-10 h-10" />
+        </a>
       </div>
     </nav>
   );

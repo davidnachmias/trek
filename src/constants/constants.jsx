@@ -1,4 +1,4 @@
-import machinesPG from "../assets/img/machines.png";
+import machinesPG from "../assets/img/machines2.png";
 import minervaPG from "../assets/img/minerva.png";
 import trekbag from "../assets/img/trekbag.png";
 export const HERO_CONTENT = `I’m a fullstack developer passionate about building modern, scalable web applications using the MERN stack. With a strong foundation in React, Next.js, Node.js, and MongoDB, I focus on writing clean code and crafting smooth user experiences. I'm constantly exploring new technologies and best practices to grow as a developer and bring fresh ideas into every project.`;
@@ -16,7 +16,8 @@ export const EXPERIENCES = [
     year: "2024",
     role: "Fullstack Developer",
     company: "H.M.T.S",
-    description: `Developed a machinery management system to streamline manufacturing workflows and improve production data visualization. Built using Next.js, MongoDB, and Next.js built-in servers, addressing performance and data challenges with tailored solutions.`,
+    description: `Developed a machinery management system to streamline manufacturing workflows and improve production data visualization. The system was built to meet specific operational requirements and includes features such as email notifications and Excel file generation. Built using Next.js, MongoDB, and Next.js built-in servers, addressing performance and data challenges with tailored solutions.`,
+
     technologies: [
       "Next.js",
       "MongoDB",
@@ -37,11 +38,11 @@ export const PROJECTS = [
   },
 
   {
-    title: "Machines Factory Management System",
-    image: machinesPG, // או נתיב לתמונה אם יש לך תמונה לשים
-    url: "https://machines-factory.vercel.app/", // שים את ה-URL האמיתי אם קיים
+    title: "Machines Factory Management System (in use) ",
+    image: machinesPG,
+    url: "https://machines-factory.vercel.app/",
     description:
-      "A machinery management system designed to streamline manufacturing workflows and visualize production data. Built with Next.js, MongoDB, and Next.js built-in servers, delivering tailored solutions for performance and data management challenges.",
+      "A machinery management system built to support manufacturing workflows, production data visualization, email notifications, and Excel file exports. Developed with Next.js, MongoDB, and built-in Next.js servers to ensure performance, scalability, and efficient data handling.",
     technologies: [
       "Next.js",
       "MongoDB",
