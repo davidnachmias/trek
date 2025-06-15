@@ -1,16 +1,39 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { RiReactjsFill } from "react-icons/ri";
-import { RiNextjsFill } from "react-icons/ri";
+import { RiReactjsFill, RiNextjsFill } from "react-icons/ri";
 import { BiLogoMongodb } from "react-icons/bi";
-import { FaNodeJs } from "react-icons/fa";
-import { div } from "framer-motion/client";
+import {
+  FaNodeJs,
+  FaGitAlt,
+  FaHtml5,
+  FaCss3Alt,
+  FaGithub,
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiTypescript,
+  SiJavascript,
+  SiExpress,
+} from "react-icons/si";
 
 const initialOrder = [
   { id: "react", icon: <RiReactjsFill className="text-7xl text-cyan-400" /> },
   { id: "next", icon: <RiNextjsFill className="text-7xl" /> },
   { id: "mongo", icon: <BiLogoMongodb className="text-7xl text-green-600" /> },
   { id: "node", icon: <FaNodeJs className="text-7xl text-green-500" /> },
+  { id: "tailwind", icon: <SiTailwindcss className="text-7xl text-sky-400" /> },
+  { id: "ts", icon: <SiTypescript className="text-7xl text-blue-600" /> },
+  { id: "git", icon: <FaGitAlt className="text-7xl text-orange-500" /> },
+  {
+    id: "github",
+    icon: (
+      <FaGithub className="text-7xl text-white bg-black rounded-full p-1" />
+    ),
+  },
+  { id: "express", icon: <SiExpress className="text-7xl text-gray-700" /> },
+  { id: "js", icon: <SiJavascript className="text-7xl text-yellow-400" /> },
+  { id: "html", icon: <FaHtml5 className="text-7xl text-orange-600" /> },
+  { id: "css", icon: <FaCss3Alt className="text-7xl text-blue-500" /> },
 ];
 
 export default function TechnologiesReordering() {
@@ -22,7 +45,7 @@ export default function TechnologiesReordering() {
   }, [order]);
 
   return (
-    <div className="border-b border-neutral-400  pb-4">
+    <div className="border-b border-neutral-400 pb-4">
       <div className="my-20 flex flex-col items-center justify-center">
         <ul style={container}>
           {order.map((tech) => (
@@ -36,22 +59,19 @@ export default function TechnologiesReordering() {
   );
 }
 
-/**
- * Utils
- */
+// Shuffle util
 function shuffle(array) {
   return [...array].sort(() => Math.random() - 0.5);
 }
 
-/**
- * Styles
- */
+// Animation spring config
 const spring = {
   type: "spring",
   damping: 20,
   stiffness: 300,
 };
 
+// Styles for container and item
 const container = {
   listStyle: "none",
   padding: 0,
@@ -59,8 +79,8 @@ const container = {
   position: "relative",
   display: "flex",
   flexWrap: "wrap",
-  gap: 10,
-  width: 300,
+  gap: 20,
+  width: 600,
   flexDirection: "row",
   justifyContent: "center",
   alignItems: "center",
