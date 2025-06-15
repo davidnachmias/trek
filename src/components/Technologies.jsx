@@ -40,7 +40,7 @@ export default function TechnologiesReordering() {
   const [order, setOrder] = useState(initialOrder);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setOrder(shuffle(order)), 1000);
+    const timeout = setTimeout(() => setOrder(shuffle(order)), 3000);
     return () => clearTimeout(timeout);
   }, [order]);
 
