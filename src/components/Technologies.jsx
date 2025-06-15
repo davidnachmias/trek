@@ -46,7 +46,7 @@ export default function TechnologiesReordering() {
 
   return (
     <div className="border-b border-neutral-400 pb-4">
-      <div className="my-20 flex flex-col items-center justify-center">
+      <div className="my-20 flex flex-col items-center justify-center w-full px-4 sm:px-6 lg:px-8">
         <ul style={container}>
           {order.map((tech) => (
             <motion.li key={tech.id} layout transition={spring} style={item}>
@@ -80,7 +80,8 @@ const container = {
   display: "flex",
   flexWrap: "wrap",
   gap: 20,
-  width: 700,
+  maxWidth: "600px",
+  width: "100%",
   flexDirection: "row",
   justifyContent: "center",
   alignItems: "center",

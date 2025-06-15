@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <div className="border-b border-neutral-400 pb-4 lg:mb-35 ">
+    <div className="border-b border-neutral-400 pb-8 lg:mb-35 ">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <motion.div
