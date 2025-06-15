@@ -80,7 +80,7 @@ const container = {
   display: "flex",
   flexWrap: "wrap",
   gap: 20,
-  width: 600,
+  width: 700,
   flexDirection: "row",
   justifyContent: "center",
   alignItems: "center",

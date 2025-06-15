@@ -28,7 +28,7 @@ export default function Projects() {
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <img
                   src={project.image}
-                  className="w-full cursor-pointer mb-4"
+                  className="w-full cursor-pointer rounded-xl border-2 border-neutral-950 mb-4 "
                   alt={project.title}
                 />
               </a>
