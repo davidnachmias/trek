@@ -10,7 +10,7 @@ import VantaWavesBackground from "./components/VantaWavesBackground";
 
 const App = () => {
   return (
-    <div className="overflow-x-hidden text-neutral-300 sm:text-neutral-200 antialiased selection:bg-cyan-600 selection:text-cyan-900">
+    <div className="overflow-x-hidden text-neutral-300 sm:text-neutral-100 antialiased selection:bg-cyan-600 selection:text-cyan-900">
       {/* רקע עם אפקט גלים וגרדיאנט */}
       <div className="fixed top-0 left-0 -z-10 h-full w-full scroll-smooth">
         <VantaWavesBackground />
