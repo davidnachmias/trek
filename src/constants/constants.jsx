@@ -1,6 +1,7 @@
 import machinesPG from "../assets/img/machines2.png";
 import minervaPG from "../assets/img/minerva.png";
 import trekbag from "../assets/img/trekbag.png";
+import rmt from "../assets/img/rmt.png";
 export const HERO_CONTENT = `I’m a fullstack developer passionate about building modern, scalable web applications using the MERN stack. With a strong foundation in React, Next.js, Node.js, and MongoDB, I focus on writing clean code and crafting smooth user experiences. I'm constantly exploring new technologies and best practices to grow as a developer and bring fresh ideas into every project.`;
 export const ABOUT_TEXT = `I am an enthusiastic and motivated fullstack developer specializing in the MERN stack. I enjoy creating modern, efficient, and user-friendly web applications, using technologies like React, Next.js, Node.js, and MongoDB. My journey in web development started from a passion for learning how things work, and I’m driven by the desire to improve, explore new technologies, and tackle real-world challenges. I thrive in collaborative teams and love turning ideas into high-quality solutions. Outside of coding, I enjoy staying active and experimenting with new tools and frameworks to grow as a developer.`;
 
@@ -50,13 +51,21 @@ export const PROJECTS = [
       "Tailwind CSS",
     ],
   },
+  // {
+  //   title: "trekbag website",
+  //   image: trekbag,
+  //   url: "https://trekbag-davidn.vercel.app/",
+  //   description:
+  //     "A personal website expiriment using React, Tailwind CSS, and Zustand for state management.",
+  //   technologies: ["HTML", "CSS", "React", "zustand"],
+  // },
   {
-    title: "trekbag website",
-    image: trekbag,
-    url: "https://trekbag-davidn.vercel.app/",
+    title: "Job Search Platform",
+    image: rmt, // תוכל לשנות לפי הנתיב שלך
+    url: "https://rmt-dev-david.vercel.app/",
     description:
-      "A personal website expiriment using React, Tailwind CSS, and Zustand for state management.",
-    technologies: ["HTML", "CSS", "React", "zustand"],
+      "Responsive job search app built with React, TypeScript, and Context API. Features include API integration with React Query, debounced search, and pagination.",
+    technologies: ["React", "TypeScript", "React Query", "Tailwind CSS"],
   },
 ];
 

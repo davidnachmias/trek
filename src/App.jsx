@@ -5,12 +5,14 @@ import Technologies from "./components/Technologies";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import VantaWavesBackground from "./components/VantaWavesBackground";
+
 const App = () => {
   return (
     <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-600 selection:text-cyan-900">
-      {/* רקע קבוע עם גרדיאנט סגול עדין */}
+      {/* רקע עם אפקט גלים וגרדיאנט */}
       <div className="fixed top-0 left-0 -z-10 h-full w-full scroll-smooth">
-        <div className="absolute top-0 z-[-2] h-screen w-screen blackBg" />
+        <VantaWavesBackground />
       </div>
 
       {/* תוכן האתר */}
