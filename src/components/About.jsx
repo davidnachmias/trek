@@ -9,7 +9,7 @@ export default function About() {
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }} // ✅ אנימציה רק פעם אחת
         transition={{ duration: 1 }}
-        className="my-20 text-center text-4xl"
+        className="my-20 text-center text-4xl text-pink-300 "
       >
         about me
       </motion.h2>

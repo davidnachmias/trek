@@ -10,7 +10,7 @@ export default function Experience() {
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className="my-30 text-center text-4xl"
+        className="my-30 text-center text-4xl text-pink-300"
       >
         Experience
       </motion.h2>
