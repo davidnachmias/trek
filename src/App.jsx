@@ -6,6 +6,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import VantaWavesBackground from "./components/VantaWavesBackground";
+import StatsOverlay from "./components/stats";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
 
       {/* תוכן האתר */}
       <div className="container mx-auto px-8">
+        <StatsOverlay />
         <Navbar />
         <Hero />
         <About />

@@ -23,7 +23,7 @@ const initialOrder = [
   { id: "node", icon: <FaNodeJs className="text-7xl text-green-500" /> },
   { id: "tailwind", icon: <SiTailwindcss className="text-7xl text-sky-400" /> },
   { id: "ts", icon: <SiTypescript className="text-7xl text-blue-600" /> },
-  { id: "git", icon: <FaGitAlt className="text-7xl text-orange-500" /> },
+
   {
     id: "github",
     icon: (
@@ -33,7 +33,6 @@ const initialOrder = [
   { id: "express", icon: <SiExpress className="text-7xl text-gray-700" /> },
   { id: "js", icon: <SiJavascript className="text-7xl text-yellow-400" /> },
   { id: "html", icon: <FaHtml5 className="text-7xl text-orange-600" /> },
-  { id: "css", icon: <FaCss3Alt className="text-7xl text-blue-500" /> },
 ];
 
 export default function TechnologiesReordering() {

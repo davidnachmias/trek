@@ -6,9 +6,9 @@ export default function Experience() {
   return (
     <div className="border-b border-neutral-400 pb-4">
       <motion.h2
-        initial={{ y: -100, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: false }}
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 1 }}
         className="my-30 text-center text-4xl"
       >
@@ -19,20 +19,20 @@ export default function Experience() {
           <div key={index} className="mb-30 flex flex-wrap lg:justify-center">
             <div className="w-full lg:w-1/4">
               <motion.p
-                initial={{ x: -100, opacity: 0 }}
+                initial={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 className="mb-2 text-sm"
               >
                 {experience.year}
               </motion.p>
             </div>
             <motion.div
-              initial={{ x: 100, opacity: 0 }}
+              initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 1 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               className="w-full max-w-xl lg:w-3/4"
             >
               <h6 className="mb-2 font-semibold">

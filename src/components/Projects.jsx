@@ -6,9 +6,9 @@ export default function Projects() {
   return (
     <div className="border-b border-neutral-400 pb-4">
       <motion.h2
-        initial={{ y: -100, opacity: 0 }}
+        initial={{ y: -50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 1 }}
         className="my-20 text-center text-4xl"
       >
@@ -16,7 +16,7 @@ export default function Projects() {
       </motion.h2>
       {PROJECTS.map((project, index) => (
         <motion.div
-          initial={{ y: 100, opacity: 0 }}
+          initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: false }}
           transition={{ duration: 1 }}

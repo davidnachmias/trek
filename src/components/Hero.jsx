@@ -8,8 +8,8 @@ export default function Hero() {
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <motion.div
-            initial={{ y: -100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: false }}
             transition={{ duration: 2 }}
             className="flex flex-col items-center h-screen lg:items-start"
