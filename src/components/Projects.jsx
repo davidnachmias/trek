@@ -10,7 +10,7 @@ export default function Projects() {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className="my-20 text-center text-4xl"
+        className="my-20 text-center text-4xl text-pink-300"
       >
         Projects and Experiments
       </motion.h2>
