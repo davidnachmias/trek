@@ -1,6 +1,7 @@
 import React from "react";
 import { HERO_CONTENT } from "../constants/constants";
 import { motion } from "framer-motion";
+import hero from "../assets/img/hero.jpg";
 
 export default function Hero() {
   return (
@@ -24,6 +25,15 @@ export default function Hero() {
               {HERO_CONTENT}
             </p>
           </motion.div>
+        </div>
+        <div className="w-full lg:w-1/2">
+          <div className="flex justify-center">
+            <img
+              className="w-130 rounded-3xl shadow-xl shadow-black/30 border border-neutral-800"
+              src={hero}
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
